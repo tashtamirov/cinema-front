@@ -17,8 +17,9 @@ const Home = () => {
     <div className={styles.items}>  
       {movies.map((carts) => {
         return (
-          <div>
-            <img src={`http://localhost:4000/${carts.image} `} />   
+          <div className={styles.poster}>
+            <img width={150} height={200} src={`http://localhost:4000/${carts.image} `} />  
+            
           </div>
         );
       })}
