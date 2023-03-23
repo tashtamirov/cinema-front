@@ -21,6 +21,8 @@ const Home = () => {
         return (
           <div>
          <Link  to={`/OnePage/${carts._id}`}><img src={`http://localhost:4000/${carts.image} `} /></Link>  
+
+            
           </div>
         );
       })}

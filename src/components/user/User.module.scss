@@ -1,0 +1,14 @@
+.user button {
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: initial;
+    :hover {
+        color: rgb(130, 123, 123);
+    }
+}

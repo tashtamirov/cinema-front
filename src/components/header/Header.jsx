@@ -1,26 +1,22 @@
 import React from 'react'
+import Search from '../search/Search'
+import styles from "./Header.module.scss";
+import CinemaIcon from '../../assets/icons/CinemaIcon';
+import User from '../user/User';
 
 export const Header = () => {
     return (
         <div className='app'>
-            <div className="header">
-                <div className="logo">
-                    logo
-                </div>
-                <div className="inp">
-                    <input placeholder='поиск фильмов...' />
-                </div>
-                <div className='right-header'>
-                    <div className="favorite">
-                        fav
+            <div className={styles.header}>
+                <div className={styles.logo}>
+                    <div className={styles.logoImage}>
+                        <CinemaIcon/>
                     </div>
-                    <div className="user">
-                        user
-                    </div>
-                    <div className="cart">
-                        cart
-                    </div>
+                    <span className={styles.cinema}>cinema</span>
+                    <span className={styles.park}>PARK</span>
                 </div>
+                <Search />
+                <User />
             </div>
         </div>
     )
