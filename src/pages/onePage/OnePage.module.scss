@@ -1,0 +1,19 @@
+body{
+    background-color: black
+}
+
+.items{
+  color: white;
+  display: flex;
+}
+
+.items img{
+    width: 800px;
+    height: 400px; 
+}
+
+
+.cartBlock{
+    display: flex;
+    max-width: 700px;
+}
