@@ -7,7 +7,10 @@
     row-gap: 30px ;
 }
 
-.items img{
-    width: 400px;
-    height: 400px; 
+.poster {
+cursor: pointer;
+    :hover {
+        transition: 0.1s;
+        transform: scale(1.2);
+    }
 }
