@@ -6,18 +6,18 @@ import User from '../user/User';
 
 export const Header = () => {
     return (
-        <div className='app'>
-            <div className={styles.header}>
-                <div className={styles.logo}>
-                    <div className={styles.logoImage}>
-                        <CinemaIcon/>
-                    </div>
-                    <span className={styles.cinema}>cinema</span>
-                    <span className={styles.park}>PARK</span>
+        <div className={styles.header}>
+            <div className={styles.logo}>
+                <div className={styles.icon}>
+                    <CinemaIcon />
                 </div>
-                <Search />
-                <User />
+                <span className={styles.cinema}>cinema</span>
+                <span className={styles.park}>PARK</span>
             </div>
+            <div className={styles.input}>
+                <input placeholder='search any movies...' />
+            </div>
+            <User />
         </div>
     )
 }
