@@ -1,7 +1,6 @@
-
 body {
-  background-color: #000000;
-  text-shadow: 0 0.05rem 0.1 rem rgb(0, 0, 0 / 50%)
+background-color: #000000 !important;
+  text-shadow: 0 0.05rem 0.1 rem rgb(0, 0, 0 / 50%) !important
 }
 
 h1 {
@@ -11,6 +10,8 @@ h1 {
 ul {
   text-align: left;
 }
+
+
 
 /* .app {
   text-align: center;
