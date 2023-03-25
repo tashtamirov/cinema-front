@@ -31,7 +31,7 @@ const initialState = {
     export const authSignIn = createAsyncThunk(
         'auth/SignIn', async ({login, password}, thuncAPI)=>{
             try{
-                const res = await fetch("http://localhost:4000/auth/login",{
+                const res = await fetch("http://localhost:4000/login",{
                     method: 'POST',
                     headers:{
                         "Content-Type": "application/json",
@@ -39,10 +39,11 @@ const initialState = {
                     body: JSON.stringify({login, password})  
                 })
                  const token = await res.json()
+                 console.log(token)
                  if(token.error){
                   return thuncAPI.rejectWithValue(token.error)
                  }
-                 localStorage.setItem(token, 'token')
+                 localStorage.setItem('token', token)  
                  return token
             }  catch(error){
                 thuncAPI.rejectWithValue(error)   
@@ -64,7 +65,6 @@ const initialState = {
                     state.error = null
                     state.signIn = true   
                     state.token =action.payload 
-                    console.log(action.payload)
                 })
 
                 builder.addCase(authSignIn.rejected, (state, action)=>{  

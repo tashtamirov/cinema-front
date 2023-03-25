@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from "./Search.module.scss";
 
-const Search = () => {
+const Search = (props) => {
     return (
         <div>
             <div className={styles.inp}>
-                <input placeholder="search any moovies..." />
+                <input onChange={(e) => props.setSearch(e.target.value)} value={props.search} placeholder="Введите название фильма" />
             </div>
         </div>
     )

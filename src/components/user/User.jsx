@@ -8,7 +8,7 @@ export const User = () => {
             <button>
                 <UserIcon />
             </button>
-        </div>
+        </div>     
     )
 }
 

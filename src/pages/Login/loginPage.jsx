@@ -9,17 +9,18 @@ const LoginPage = () => {
   const dispatch = useDispatch();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(authSignIn({ username, password }));
+    dispatch(authSignIn({ login: username, password }));  
     setUsername("");
     setPassword("");
+ 
   };
 
   const onChangeName = (e) => {
     setUsername(e);
   };
+  
 
   const onChangePassword = (e) => {
     setPassword(e);
@@ -48,11 +49,12 @@ const LoginPage = () => {
       </label>
 
       <div className={styles.divBtns}>
-        <button type="submit" className={styles.login}>
+       <button  type="submit" className={styles.login}>
           Войти
         </button>
+    
         {
-          <Link className={styles.link} to="/registerPage">           
+          <Link className={styles.link} to="/registerPage">              
             Нет аккаунта ?  
           </Link>
         }
