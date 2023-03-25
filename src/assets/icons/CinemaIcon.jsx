@@ -7,8 +7,8 @@ function CinemaIcon(props) {
              <svg
             viewBox="0 0 24 24"
             fill="currentColor"
-            height="1em"
-            width="1em"
+            height="auto"
+            width="auto"
             style={{}}
             {...props}
         >

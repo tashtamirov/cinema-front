@@ -5,7 +5,7 @@ const Sidebar = () => {
     return (
         <div className={styles.sidebar}>
             <div>
-                <h1>Категории</h1>
+                <h5>Категории</h5>
                 <nav>
                     <ul className={styles.list}>
                         <li>Премьеры</li>
