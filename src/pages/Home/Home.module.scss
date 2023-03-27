@@ -7,10 +7,24 @@
     row-gap: 30px ;
 }
 
-.poster {
+.items img {
+    width:200px;
+    height: 250px;
+}
+
+.Link img {
 cursor: pointer;
     :hover {
         transition: 0.1s;
         transform: scale(1.2);
     }
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Verdana', sans-serif;
+
 }
